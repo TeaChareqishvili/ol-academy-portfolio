@@ -1,16 +1,31 @@
-
 import { NavLink } from "react-router-dom";
+import "./PortfolioStyles.scss";
 
-
-
-function Header(){
-    return (
+function Header() {
+  return (
+    <div className="header">
       <nav>
-        <NavLink to="/home">Home</NavLink>
-        <NavLink to="/products">Products</NavLink>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "navLink")}
+          to="/aboutme"
+        >
+          About Me
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "navLink")}
+          to="/contacts"
+        >
+          contacts
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "navLink")}
+          to="/status"
+        >
+          Status
+        </NavLink>
       </nav>
-    )
+    </div>
+  );
 }
 
-export {Header}
+export { Header };

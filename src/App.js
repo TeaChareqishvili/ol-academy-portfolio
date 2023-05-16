@@ -1,18 +1,20 @@
 import { Routes, Route } from "react-router-dom";
-import { Products } from "./components/Products";
-import { Home } from "./components/Home";
-import { Dashboard } from "./components/Dashboard";
+import { Contacts } from "./components/Contacts";
+import { AboutMe } from "./components/AboutMe";
+import { Status } from "./components/Status";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/status" element={<Status />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
