@@ -5,22 +5,13 @@ function Header() {
   return (
     <div className="header">
       <nav>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "navLink")}
-          to="/aboutme"
-        >
+        <NavLink className="navLink" to="/aboutme">
           About Me
         </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "navLink")}
-          to="/contacts"
-        >
+        <NavLink className="navLink" to="/contacts">
           contacts
         </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "navLink")}
-          to="/status"
-        >
+        <NavLink className="navLink" to="/status">
           Status
         </NavLink>
       </nav>
